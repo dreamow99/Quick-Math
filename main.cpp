@@ -121,10 +121,18 @@ bool aKeyPressed(equation eq, int point)
     Uint32 startTime = SDL_GetTicks();
     int lastWidth = 0;
     int countTick = 0;
-    int key = 10;
-    int timeLimit;
-    if (point < 5) timeLimit = 1500;
-        else timeLimit = 1000;
+    int key;
+    unsigned int timeLimit;
+    int step = 46;
+    if (point < 5)
+    {
+        timeLimit = 2500;
+        key = 30;
+    }
+        else{
+            timeLimit = 1000;
+            key = 10;
+        }
     while(SDL_GetTicks() - startTime <= timeLimit){
         gameDraw.drawTimeLeft(lastWidth);
         if (SDL_PollEvent(&playerAns) != 0 && playerAns.type == SDL_KEYDOWN){
@@ -141,7 +149,7 @@ bool aKeyPressed(equation eq, int point)
         }
         if (countTick > key)
         {
-            lastWidth += 46;
+            lastWidth += step;
             key += countTick;
             countTick++;
         }
