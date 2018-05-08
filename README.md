@@ -1,0 +1,2 @@
+# Quick-Math
+Quick Math xây dựng dựa trên thư viện SDL. Trong Quick Math người chơi sẽ phải thực hiện nhiệm vụ gỡ bomb. Sẽ có các đẳng thức hiện ra và để gỡ được bomb thì người chơi phải đưa ra câu trả lời đẳng thức đó có đúng hay không trong một thời gian rất ngắn. Nếu đẳng thức đúng thì ấn mũi tên bên phải, đẳng thức sai thì ấn mũi tên bên trái. Khi người chơi trả lời sai hoặc trả lời không kịp thì bomb sẽ nổ và trò chơi kết thúc.
